@@ -18,7 +18,7 @@ A data-driven approach to reducing food waste and maximising profit for a small 
 | 3 | Descriptive analysis and visualisations | Done |
 | 4 | Aggregation and correlation analysis | Done |
 | 5 | Time series forecasting (SARIMAX per item) | Done |
-| 6 | Regression models | To do |
+| 6 | Regression models (OLS, Ridge, Lasso) | Done |
 | 7 | Inventory optimisation (gurobipy) | To do |
 | 8 | Results summary and sensitivity analysis | To do |
 
@@ -35,6 +35,10 @@ A data-driven approach to reducing food waste and maximising profit for a small 
 - `fig_decomposition.png` — seasonal decomposition of weekly revenue
 - `fig_sarima_forecast.png` — SARIMA revenue forecast vs actuals
 - `fig_item_forecasts.png` — per-item SARIMAX demand forecasts
+- `fig_ols_coefs.png` — OLS regression coefficients
+- `fig_ols_diagnostics.png` — OLS residual diagnostics
+- `fig_regularisation_cv.png` — Ridge/Lasso cross-validation curves
+- `fig_coef_comparison.png` — OLS vs Ridge vs Lasso coefficient comparison
 
 ### Tools
 
