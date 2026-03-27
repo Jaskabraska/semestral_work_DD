@@ -7,7 +7,7 @@ A data-driven approach to per-store demand, order-level baskets, unsold-unit cos
 ### Dataset
 
 - **[Coffee+Shop+Sales/Coffee Shop Sales.xlsx](Coffee+Shop+Sales/Coffee%20Shop%20Sales.xlsx)** — Maven Roasters line-level transactions (~149k rows, 2023). Sheet name: `Transactions`. Same-time stamps at the same store define one **order**; `transaction_id` is unique per line.
-- **holidays.csv** — Canadian public holidays 2012–2026 (for feature engineering merges).
+- **us_ny_holidays_2023.csv** — US federal and New York state public holidays for 2023 (Section 5 holiday flags; aligned with NYC-area stores). **holidays.csv** (Canadian calendar) remains in the repo for other work but is not used by the main inventory notebook.
 
 Legacy reference (previous coursework): **Cleaned_DataSet.csv** — smaller single-menu extract; older notebooks still refer to it.
 
@@ -35,7 +35,7 @@ Run Jupyter with working directory `notebooks/` (or open from that folder) so pa
 
 ### Outputs (generated)
 
-Run **`notebooks/coffee_shop_inventory.ipynb`** to populate **`outputs/`** next to the project root. The folder holds figures (daily volume, revenue rolling mean, **hour × weekday revenue heatmaps** with lowest/highest cell labels and per-store range in the title, top products, category mix, basket size, AOV, outlier diagnostic plots) and large tables (`lines_clean.csv`, `lines_enriched.csv` after Section 5, `orders_clean.csv`, daily demand extracts). **All `outputs/*.csv` and `outputs/*.png` are gitignored**; clone the repo and re-run the notebook to recreate them locally.
+Run **`notebooks/coffee_shop_inventory.ipynb`** to populate **`outputs/`** next to the project root. The folder holds figures (daily volume, revenue rolling mean, hour × weekday revenue heatmaps, top products, category mix, basket size, AOV, outlier diagnostic plots) and large tables (`lines_clean.csv`, `lines_enriched.csv` after Section 5, `orders_clean.csv`, daily demand extracts). **All `outputs/*.csv` and `outputs/*.png` are gitignored**; clone the repo and re-run the notebook to recreate them locally.
 
 ### Legacy notebooks
 
