@@ -13,7 +13,7 @@ Legacy reference (previous coursework): **Cleaned_DataSet.csv** — smaller sing
 
 ### Main notebook
 
-- **[notebooks/coffee_shop_inventory.ipynb](notebooks/coffee_shop_inventory.ipynb)** — canonical pipeline: load Excel, cleaning, `order_id`, COGS columns, order-level aggregates, calendar + holiday + product tags (Section 5), EDA (per store), stubs for aggregation / forecasting / Gurobi / sensitivity.
+- **[notebooks/coffee_shop_inventory.ipynb](notebooks/coffee_shop_inventory.ipynb)** — canonical pipeline: load Excel, cleaning, `order_id`, COGS columns, order-level aggregates, calendar + holiday + product tags (Section 5), EDA (per store), **aggregation and correlation (Section 7)**, then stubs for forecasting, Gurobi optimisation, and sensitivity (Sections 8–10).
 
 Run Jupyter with working directory `notebooks/` (or open from that folder) so paths resolve. Install Excel support: `pip install -r requirements.txt`.
 
@@ -28,9 +28,9 @@ Run Jupyter with working directory `notebooks/` (or open from that folder) so pa
 | 4.5 | Outlier checks (IQR, tails, SKU price CV) | Done |
 | 5 | Feature engineering + holidays | Done |
 | 6 | EDA visualisations (person 1) | Done |
-| 7 | Aggregation and correlation | Stub (person 2) |
-| 8 | Time series forecasting | Stub (person 3) |
-| 9 | Inventory optimisation (gurobipy) | Stub (person 4) |
+| 7 | Aggregation and correlation | Done (daily demand by SKU, orders vs lines, feature correlation heatmap) |
+| 8 | Forecasting | Stub (person 3) |
+| 9 | Optimisation (gurobipy) | Stub (person 4) |
 | 10 | Sensitivity and conclusion | Stub (person 5) |
 
 ### Outputs (generated)
