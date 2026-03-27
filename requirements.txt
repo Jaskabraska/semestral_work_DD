@@ -1,0 +1,13 @@
+# MGSC 416 coffee shop project — run notebooks from repo root or notebooks/
+pandas>=2.0
+numpy>=1.24
+matplotlib>=3.7
+seaborn>=0.13
+openpyxl>=3.1
+nbformat>=5.10
+nbclient>=0.9
+
+# Legacy semestral notebooks (forecasting / optimisation)
+statsmodels>=0.14
+scikit-learn>=1.3
+gurobipy>=11.0

@@ -24,3 +24,5 @@ Thumbs.db
 
 # Generated outputs
 enriched_dataset.csv
+outputs/*.csv
+outputs/*.png
