@@ -7,7 +7,7 @@ A data-driven approach to per-store demand, order-level baskets, unsold-unit cos
 ### Dataset
 
 - **[Coffee+Shop+Sales/Coffee Shop Sales.xlsx](Coffee+Shop+Sales/Coffee%20Shop%20Sales.xlsx)** — Maven Roasters line-level transactions (~149k rows, 2023). Sheet name: `Transactions`. Same-time stamps at the same store define one **order**; `transaction_id` is unique per line.
-- **us_ny_holidays_2023.csv** — US federal and New York state public holidays for 2023 (Section 5 holiday flags; aligned with NYC-area stores). **holidays.csv** (Canadian calendar) remains in the repo for other work but is not used by the main inventory notebook.
+- **us_ny_holidays_2023.csv** — US federal and New York state public holidays for 2023 (Section 5 holiday flags; aligned with NYC-area stores). **holidays.csv** (Canadian calendar) remains in the repo for other work but is not used by the coffee shop inventory notebooks below.
 
 Legacy reference (previous coursework): **Cleaned_DataSet.csv** — smaller single-menu extract; older notebooks still refer to it.
 
@@ -16,6 +16,8 @@ Legacy reference (previous coursework): **Cleaned_DataSet.csv** — smaller sing
 - **[notebooks/coffee_shop_inventory.ipynb](notebooks/coffee_shop_inventory.ipynb)** — canonical pipeline: load Excel, cleaning, `order_id`, COGS columns, order-level aggregates, calendar + holiday + product tags (Section 5), EDA (per store), **aggregation and correlation (Section 7)**, then stubs for forecasting, Gurobi optimisation, and sensitivity (Sections 8–10).
 
 Run Jupyter with working directory `notebooks/` (or open from that folder) so paths resolve. Install Excel support: `pip install -r requirements.txt`.
+
+- **[notebooks/coffee_shop_inventory (1).ipynb](notebooks/coffee_shop_inventory%20(1).ipynb)** — team / parallel copy of the pipeline; Section 5 uses the same **`us_ny_holidays_2023.csv`** calendar as the canonical notebook.
 
 ### Notebook structure (coffee_shop_inventory.ipynb)
 
